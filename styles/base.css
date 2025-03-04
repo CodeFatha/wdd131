@@ -1,7 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;    
-    max-width: 98rem;
   }
+
+main {    
+    display: flex;
+    justify-self: center;
+    max-width: 112rem;
+}
 
 nav {
     display: flex;

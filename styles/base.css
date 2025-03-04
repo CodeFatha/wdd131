@@ -1,0 +1,101 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0f0f0f;
+    height: 3rem;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+nav a:hover {
+    text-decoration: overline dashed;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 1em;
+    gap: 6PX;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #2f1051;
+    margin: 1em;
+    align-items:  center;
+    color: white;
+}
+
+.banner {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.banner-text {
+    position: absolute;
+    color: antiquewhite;  
+    margin-top: 4em;  
+    left: 0; 
+    right: 0;
+    margin-inline: auto; 
+    width: fit-content;
+}
+
+img {
+    width: 100%;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    background-color: #2f1051;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    color: antiquewhite;
+}
+
+.desc {
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: justify;
+
+}
+
+.course {
+    color: yellow;
+}
+
+.inset {
+    float: right;
+    margin-right: 1em;
+    width: 12rem;
+    height: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.date {
+    margin-top: 0;
+}

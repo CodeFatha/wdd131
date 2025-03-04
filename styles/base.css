@@ -1,3 +1,8 @@
+body {
+    font-family: 'Roboto', sans-serif;    
+    max-width: 98rem;
+  }
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -21,7 +26,8 @@ nav a:hover {
     display: grid;
     grid-template-columns: 3fr 1fr;
     margin: 1em;
-    gap: 6PX;
+    gap: 6px;
+
 }
 
 .card {

@@ -2,13 +2,15 @@ const element = document.querySelector("#date-placeholder");
 const year = document.querySelector(".year");
 const today = new Date();
 const list = document.querySelectorAll('.weather-data li');
+const chillspan = document.querySelector('.wind-chill');
 const temp = list[0];
 const windSpeed = list[1];
 
 year.innerHTML = `\u00A9 ${today.getFullYear()}`;
 tempC = parseInt(temp.textContent.split(' ')[1], 10);
 windS = parseInt(windSpeed.textContent.split(' ')[2], 10);
-element.innerHTML = `Last modified: ${document.lastModified} | Wind chill (for ${tempC}℃ and ${windS}km ): ${calculateWindChill(tempC, windS)}℃`;
+element.innerHTML = `Last modified: ${document.lastModified}`;
+chillspan.innerHTML =  `${calculateWindChill(tempC, windS)}℃`;
 
 function calculateWindChill(temp, wind) {
     if (temp <= 10 || wind >= 4.8) {

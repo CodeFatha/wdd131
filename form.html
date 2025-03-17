@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A form design assignment for WDD 131">
+    <meta name="author" content="Bhekimpilo Ncube">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Product Review Form</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <div>
+                <label ><b>Product Name</b> <select id="product-select" name="select-product" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+                </label>
+            </div>
+            <label><b>Overall Rating</b></label>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            
+            <label><b>Date of Installation</b> <input type="date" name="installation-data" id="install-date"> </label>
+            <div>
+                <p><b>Which features did you find useful in the product?</b></p>
+                <p><em>(Check all that apply)</em></p>
+                <label class="inline"><input type="checkbox" name="feature" id="durability" value="durability"> Durability</label>
+                <label class="inline"><input type="checkbox" name="feature" id="ease" value="Ease of Use"> Ease of Use</label>
+                <label class="inline"><input type="checkbox" name="feature" id="performance" value="performance"> Performance</label>
+                <label class="inline"><input type="checkbox" name="feature" id="design" value="design"> Design</label>
+            </div>
+            <label><b>Write a Review </b> <span class="green">(Optional)</span> <textarea name="review" id="review"></textarea> </label>
+            <div>
+                <label> <b>Your Name</b> <span class="green">(Optional)</span><input type="text" name="username"></label>
+            </div>
+            <input id="submit" type="submit" value="POST MY REVIEW">
+        </form>
+    </main>
+    <footer>
+        <p>Bheki Ncube | WDD131 | <span class="year"></span></p>
+        <p id="date-placeholder"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+Name: TestDrive.com
+Reason: The name embodies the purpose of the website and makes it easier for the user to know exactly ehat to expect
+
+Purpose:
+The site helps users book a testdrive based on the car they want and not have to worry about where
+to find the car or who the dealer is. They simply get on the websitee, scroll through
+the collection of cars and click on the image of the care they want to test drive or 
+search it by name, fill in their information as well as the slot they want from the ones that
+are available and they will be redirected to dealerships near them who would also be 
+notified and would have to reserve the slot for them.
+
+Scenarios:
+Where can I get a certain model and make of a car near make
+How can I book a test drive without navigating various sites
+
+Fonts:
+font-family: "Sour Gummy", "Nunito", "Sour Gummy" sans-serif;

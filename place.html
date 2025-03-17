@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="styles/country-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="scripts/country.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="week03/scripts/country.js" defer></script>
     <title>Country Page</title>
 </head>
 <body>
@@ -18,9 +19,9 @@
     </header>
     <main>
         <picture>
-            <source srcset="images/seychelles_large.webp" media="(min-width: 1000px)">
-            <source srcset="images/seychelles_medium.png" media="(min-width: 750px)">
-            <img src="images/seychelles_small.png" alt="beach in the Seychelles">
+            <source srcset="week03/images/seychelles_large.webp" media="(min-width: 1000px)">
+            <source srcset="week03/images/seychelles_medium.webp" media="(min-width: 750px)">
+            <img src="week03/images/seychelles_small.webp" alt="beach in the Seychelles">
           </picture>
         <div class="data">
             <h2>Data</h2>
@@ -34,13 +35,14 @@
         </div>
         <div class="weather">
             <h2 class="weather-heading">Weather</h2>
-            <img class="weather-icon" src="images/weather.svg" alt="">
+            <img class="weather-icon" src="week03/images/weather.svg" alt="">
             <ul class="weather-data">
                 <li><span class="label">Temperature:</span> 7<sup>o</sup>C</li>
                 <li><span class="label">Wind Speed:</span> 16km/h</li>
                 <li><span class="label">Climate:</span> Tropical</li>
                 <li><span class="label">NE Monsoon:</span> Dec - Mar</li>
                 <li><span class="label">SE Trade Winds:</span> May - Sep</li>
+                <li><span class="label">Wind Chill:</span><span class="wind-chill"></span></li>
             </ul>
         </div>
     </main>

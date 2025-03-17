@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root {
     --margin: 2px auto;
     --maxWidth: 44rem;
     --minWidth: 25rem;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;

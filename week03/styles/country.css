@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+    --margin: 2px auto;
+    --maxWidth: 44rem;
+    --minWidth: 25rem;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+img {
+    width: 100%;
+    margin: var(--margin);
+    max-width: var(--maxWidth); 
+    min-width: var(--minWidth);
+ }
+ header {
+    background-color: rgb(7, 83, 127);
+    width: 100%;
+    margin: var(--margin);
+    min-width: var(--minWidth);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: var(--maxWidth); 
+    color: white;
+ }
+
+ footer {
+    flex-direction: column;
+    background-color: rgb(7, 83, 127);
+    margin: var(--margin);
+    max-width: var(--maxWidth); 
+    min-width: var(--minWidth);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: white;
+    text-align: center;
+ }
+
+
+ h1, h2, ul {
+    text-align: center;
+ }
+h2, ul {
+    margin: 6px 0;
+}
+.data {
+    border: 1px solid#eee;
+    border-radius: 4px 4px 0 0 ;
+    width: 100%;
+    min-width: var(--minWidth);
+}
+
+.weather {
+    border: 1px solid#eee;
+    border-radius: 4px 4px 0 0 ;
+    width: 100%;
+    margin: var(--margin);
+    max-width: var(--maxWidth); 
+    min-width: var(--minWidth);
+}
+
+li {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.weather-icon {
+    display: flex;  
+    justify-self: center;  
+    width: 2rem;
+    height: 2rem;
+}
+
+.label {
+    margin-right: 1rem;
+}

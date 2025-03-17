@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A response page about a country I would like to vist">
+    <meta name="author" content="Bheki Ncube">
+    <link rel="stylesheet" href="styles/country.css">    
+    <link rel="stylesheet" href="styles/country-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="scripts/country.js" defer></script>
+    <title>Country Page</title>
+</head>
+<body>
+    <header>
+        <h1>The Seychelles</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/seychelles_large.webp" media="(min-width: 1000px)">
+            <source srcset="images/seychelles_medium.png" media="(min-width: 750px)">
+            <img src="images/seychelles_small.png" alt="beach in the Seychelles">
+          </picture>
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><span class="label">Altitude:</span>  905 meters Above SL</li>
+                <li><span class="label">Population:</span> 98,000 (2003 Census)</li>
+                <li><span class="label">Currency:</span> Seychellois Creole</li>
+                <li><span class="label">Language:</span> Seychellois rupee</li>
+                <li><span class="label">Time Zone:</span> Seychelles Time</li>
+            </ul>
+        </div>
+        <div class="weather">
+            <h2 class="weather-heading">Weather</h2>
+            <img class="weather-icon" src="images/weather.svg" alt="">
+            <ul class="weather-data">
+                <li><span class="label">Temperature:</span> 7<sup>o</sup>C</li>
+                <li><span class="label">Wind Speed:</span> 16km/h</li>
+                <li><span class="label">Climate:</span> Tropical</li>
+                <li><span class="label">NE Monsoon:</span> Dec - Mar</li>
+                <li><span class="label">SE Trade Winds:</span> May - Sep</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p><b>Bheki Ncube | WDD131 | <span class="year"></span></b></p>
+        <p id="date-placeholder"></p>
+    </footer>
+</body>
+</html>

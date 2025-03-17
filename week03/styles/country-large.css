@@ -1,0 +1,41 @@
+@media screen and (min-width:44rem) 
+{
+    :root {
+        --maxWidth: 100%;
+    }
+    main {
+        display: block;
+        max-width: var(--maxWidth);
+        position: relative;
+    }
+    .data {
+        position: absolute;  
+        width: auto;   
+        padding: 1rem 0;   
+        left: 2rem;
+        top: 2rem;        
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .weather {
+        position: absolute;  
+        width: fit-content;   
+        padding: 1rem 0;   
+        right: 2rem;
+        bottom: 2rem;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    h2, li{
+        color: rgb(255, 255, 255);    
+    }
+
+    .weather-heading::after {
+        content: '🌥️';
+        display: block;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+}

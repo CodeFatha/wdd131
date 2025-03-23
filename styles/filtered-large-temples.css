@@ -1,0 +1,33 @@
+@media screen and (min-width: 40em) {
+    .links a {
+        text-align: center;
+    }
+
+    header {
+        display: flex ;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 1rem;
+        background-color: #0a467b;
+        color: antiquewhite;
+        font-family: cursive;
+    }
+
+    .card {
+        width: 300px;
+        height: auto;
+      }
+
+    #menu {
+        display: none;
+    }
+
+    .links.show {
+        display: flex;
+    }
+
+    .navigation.show {
+        width: auto;
+    }
+}

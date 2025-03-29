@@ -107,8 +107,10 @@ linkLarge.addEventListener('click', getLargeTemples);
 linkSmall.addEventListener('click', getSmallTemples);
 linkHome.addEventListener('click', getAllTemples);
 
+const caption = document.createElement('ul');
+caption.className = 'caption';
 function renderArray(temples) {
-  container.innerHTML = '';
+  caption.innerHTML = '';
   temples.forEach(temple => {
     const card = document.createElement('div');
     card.className = 'card';
@@ -122,8 +124,7 @@ function renderArray(temples) {
     img.height = 200;
     img.style.objectFit = 'cover';
 
-    const caption = document.createElement('ul');
-    caption.className = 'caption';
+    const item = document.createElement('li');
     const name = document.createElement('p');
     name.className = 'name';
     const location = document.createElement('p');
@@ -134,16 +135,16 @@ function renderArray(temples) {
     dedicated.textContent = `Dedicated: ${temple.dedicated}`;
     size.textContent = `Size: ${temple.area.toLocaleString()} sq ft`;
 
-    caption.appendChild(name);
-    caption.appendChild(location);
-    caption.appendChild(dedicated);
-    caption.appendChild(size);
-
-    card.appendChild(caption);
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedicated);
+    card.appendChild(size);
     card.appendChild(img);
 
-    container.appendChild(card);
+    item.appendChild(card);
+    caption.appendChild(item);
   });
+  container.appendChild(caption);
 }
 
 renderArray(temples)

@@ -1,0 +1,16 @@
+body {
+    margin: 0 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, nav {
+    font-family: 'Sour Gummy', sans-serif;
+}
+
+.description {
+    font-weight: bold;
+}
+
+li {
+    list-style: lower-roman;
+}

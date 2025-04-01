@@ -5,6 +5,7 @@ body {
 
 h1, h2, h3, nav {
     font-family: 'Sour Gummy', sans-serif;
+    color: cadetblue;
 }
 
 .description {
@@ -13,4 +14,6 @@ h1, h2, h3, nav {
 
 li {
     list-style: lower-roman;
+    color: #393939;
 }
+

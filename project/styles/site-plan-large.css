@@ -1,0 +1,52 @@
+@media screen and (min-width: 30rem) {
+    body{
+        height: 100vh;
+        
+    }
+    
+    .top-bar {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 3rem;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        visibility: visible;
+        height: fit-content;
+        gap: 2rem;
+        padding-right: 2rem;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        height: fit-content;
+    }
+    .banner {
+        display: flex;
+        padding:1rem 0;
+        height: 300px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .banner h1 {
+        display: inline;
+        visibility: visible;
+        height: fit-content;
+        margin: 0;
+        padding: 0 2rem;
+    }
+
+    footer {
+        width: 100%;
+        position: unset;
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,189 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    max-width: 72rem;
+    min-width: 24rem;
+    min-height: 4rem;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url("../images/car_banner.jpg");
+    padding: 0 0.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hdr {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.cars {
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-gap: 2rem;
+    place-items: center;
+    gap: 1rem;
+    margin: 0 1rem;
+}
+
+footer {
+    background-color: cadetblue;
+    padding: 0.4rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: aliceblue;
+    font-family: 'Sour Gummy', sans-serif;
+}
+.brand {
+    display: block;
+}
+
+.brand.show {
+    display: none;
+}
+.hdr {
+    display: flex;
+}
+li {
+    list-style: none;
+}
+
+li.show {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+#menu::before {
+    content: '≡';
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+#menu.show::before {
+    content: 'x';
+    color: aliceblue;
+    font-size: 2rem;
+    display: flex;
+}
+
+a {
+    color: aliceblue;
+}
+
+a:hover {
+    color: yellow;
+}
+
+nav {
+    width: 100%;
+}
+
+.navigation {
+    display: none;
+    width: 100%;
+    left: 0;
+    font-size: 1.4rem;
+}
+
+.navigation li {
+    padding: 0.3rem 0;
+}
+
+.navigation.show {
+    display: block;
+}
+
+footer {
+    background-image: url("../images/car_banner.jpg");
+    padding: 0.4rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#car-image {
+    margin: 1rem;
+    
+}
+
+form {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    height: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: fit-content;
+    width: 1rem;
+    margin: 0 4px 0 0;
+}
+
+input[type=submit] {
+    background-color: cadetblue;
+    border-color: cadetblue;
+    border-radius: 5px;
+    height: 2rem;
+    color: aliceblue;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(14, 163, 226);
+    border-color: rgb(14, 163, 226);
+}
+
+label {
+    padding-top: 0.5rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+    margin: 0;
+}
+fieldset {
+    margin: 0;
+    border-color: #363636;
+    border-width: 1px;
+}
+
+.inline {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    color: red;
+}

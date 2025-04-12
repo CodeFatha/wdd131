@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Details and form">
+    <link rel="stylesheet" href="styles/details.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital@0;1&display=swap" rel="stylesheet">
+    <script src="scripts/details.js" defer></script>
+    <title id="title"></title>
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="brand">
+                Test Drive<sup>®</sup>
+            </h1>
+        </div>
+        <div class="hdr">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="project.html">Home</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a id="menu" href="#"></a>
+        </div>
+</header>
+    </header>
+    <main>
+        <h2 id="car-name"></h2>
+        <img id="car-image" src="" alt="">
+        <form id="booking" action="confirmation.html">
+            <input type="text" name="name" id="name" placeholder="Type your name (Required)" required>
+            <input type="text" name="surname" id="surname" placeholder="Type your surname (Required)" required>
+            <fieldset>
+                <legend>Gender</legend>
+                <label class="inline"><input type="radio" name="gender" value="Male" required> Male</label>
+                <label class="inline"><input type="radio" name="gender" value="Female" required> Female</label>
+            </fieldset>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Type your email (Required)" required>
+            <input type="datetime-local" name="date" id="calendar" required>
+            <fieldset>
+                <legend>Transmission</legend>
+                <label class="inline"><input type="radio" name="transmission" value="Manual"> Manual</label>
+                <label class="inline"><input type="radio" name="transmission" value="Automatic"> Automatic</label>
+                <label class="inline"><input type="radio" name="transmission" value="CVT"> CVT</label>
+            </fieldset>
+            <input type="submit" onclick="getDetails()" value="Book TestDrive">
+        </form>
+    </main>
+    <footer>
+        <p>Bheki Ncube | WDD131 | <span class="year"></span> | <a href="http://webuycars.co.za/buy-a-car" target="_blank">Image Source</p>
+        <p id="date-placeholder"></p>
+    </footer>
+</body>
+</html>

@@ -39,6 +39,9 @@ function toggleMenu() {
 }
 
 image.src = car.imageUrl;
+image.style.objectFit = 'fill';
+image.style.width = '100%';
+image.style.maxWidth = '30rem'
 title.textContent = `${car.model} | ${car.year}`;
 carName.textContent = `Booking: ${car.make} ${car.model}`
 
